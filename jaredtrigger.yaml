@@ -22,6 +22,6 @@ steps:
     args:
       - run
       - --filename=jared-pod.yaml
-      - --image=gcr.io/$PROJECT_ID/spanishbytopic-api:$SHORT_SHA
+      - --image=gcr.io/$PROJECT_ID/teamwebsite:latest
       - --location=us-east1-b
       - --cluster=cluster-1
