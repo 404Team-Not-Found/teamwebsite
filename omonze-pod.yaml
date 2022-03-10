@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: omonze
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: omonze
+  template:
+    metadata:
+      labels:
+        app: omonze
+    spec: 
+      containers:
+      - name: omonze
+        image: node:14
+        ports: 
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 100m
+            memory: 250M
+          requests:
+            cpu: 50m
+            memory: 100M
