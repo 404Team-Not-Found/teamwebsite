@@ -1,0 +1,30 @@
+#comment to test trigger yet again but this time it works for sure
+#this is the main idea of this yaml file for the trigger
+#This is the original file
+  steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Build Docker Image
+    args:
+    - 'build'
+    - '.'
+    - '-t'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'
+
+# This step pushes the imaget ot Container Registry
+# The PROJECT_ID and SHORT_SHA varables are automatically
+# repalced by Cloud Build
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Push
+    args:
+    - 'push'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'
+# This step deploys the application in Kubernetes
+  - name: 'gcr.io/cloud-builders/gke-deploy'
+    id: Deploy Pod to Kubernetes
+    args:
+      - run
+      - --filename=dev.yaml
+      - --image=gcr.io/$PROJECT_ID/spanishbytopic-api:latest
+      - --location=us-east1-b
+      - --cluster=cluster-1
