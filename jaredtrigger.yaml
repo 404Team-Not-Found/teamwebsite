@@ -21,7 +21,7 @@ steps:
   - name: 'gcr.io/cloud-builders/gke-deploy'
     args:
       - run
-      - --filename=dev.yaml
+      - --filename=jared-pod.yaml
       - --image=gcr.io/$PROJECT_ID/spanishbytopic-api:$SHORT_SHA
       - --location=us-east1-b
       - --cluster=cluster-1
