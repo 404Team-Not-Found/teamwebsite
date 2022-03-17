@@ -14,7 +14,7 @@ spec:
     spec: 
       containers:
       - name: omonze
-        image: node:14
+        image: gcr.io/team-not-found/teamwebsite
         ports: 
         - containerPort: 3000
         resources:
