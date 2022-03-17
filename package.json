@@ -1,13 +1,28 @@
 {
-    "dependencies": {
-      "config": "^3.3.7",
-      "cross-env": "^7.0.3",
-      "mocha": "^9.2.0",
-      "node-fetch": "^3.2.0"
-    },
-    "scripts": {
-      "test": "mocha",
-      "test-dev": "cross-env NODE_ENV=development mocha"
-    },
-    "type": "module"
-  }
+  "dependencies": {
+    "config": "^3.3.7",
+    "cross-env": "^7.0.3",
+    "mocha": "^9.2.0",
+    "node-fetch": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-dev": "cross-env NODE_ENV=development mocha",
+    "start": "node server.js"
+  },
+  "type": "module",
+  "name": "teamwebsite",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/404Team-Not-Found/teamwebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/404Team-Not-Found/teamwebsite/issues"
+  },
+  "homepage": "https://github.com/404Team-Not-Found/teamwebsite#readme"
+}
