@@ -1,4 +1,4 @@
- # This step builds the container image.
+# This step builds the container image.
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     id: Build Docker Image
@@ -19,16 +19,6 @@ steps:
 
       # This step deploys the application in Kubernetes 
   - name: 'gcr.io/cloud-builders/gke-deploy'
-    args:
-      - run
-      - --filename=omonze-pod.yaml
-      - --image=gcr.io/$PROJECT_ID/teamwebsite:latest
-      - --location=us-central1-c
-      - --cluster=cluster-1
-
-       # This step deploys the application in Kubernetes
-  - name: 'gcr.io/cloud-builders/gke-deploy'
-    id: Deploy Pod to Kubernetes
     args:
       - run
       - --filename=omonze-pod.yaml
