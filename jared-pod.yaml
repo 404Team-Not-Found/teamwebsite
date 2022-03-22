@@ -27,12 +27,12 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-metatdata:
+metadata:
   name: jared-pod-service
 spec:
   selector:
     app: jared-neal
-  type: network-service
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 80
