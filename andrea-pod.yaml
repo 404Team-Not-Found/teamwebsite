@@ -33,7 +33,7 @@ spec:
   selector:
     app: andrea-quaisie
   type: LoadBalancer
-  parts:
+  ports:
   - port: 80
     targetPort: 80
 ---
