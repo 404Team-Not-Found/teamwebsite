@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: maddie-christensen
-        image: nginx
+        image: gcr.io/team-not-found/teamwebsite
         ports:
-        - containerPort: 80
+        - containerPort: 3000
         resources:
           limits:
             cpu: 100m
