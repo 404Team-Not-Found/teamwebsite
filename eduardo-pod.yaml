@@ -32,7 +32,7 @@ metadata:
 spec:
   selector:
     app: eduardo-urbiola
-  type: LoadBalacer
+  type: LoadBalancer
   ports: 
   - port: 80
     targetPort: 80
