@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: maddie-christensen
-spec:
+spec: 
   replicas: 1
   selector:
     matchLabels:
@@ -11,11 +11,11 @@ spec:
     metadata:
       labels:
         app: maddie-christensen
-    spec:
+    spec: 
       containers:
       - name: maddie-christensen
         image: gcr.io/team-not-found/teamwebsite
-        ports:
+        ports: 
         - containerPort: 3000
         resources:
           limits:
