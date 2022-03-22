@@ -24,3 +24,16 @@ spec:
           requests:
               cpu: 50m
               memory: 100M
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name:eduardo-pod-service
+spec:
+  selector:
+    app: eduardo-urbiola
+  type: LoadBalacer
+  ports: 
+  - port: 80
+    targetPort: 80
+    
