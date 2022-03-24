@@ -1,29 +1,29 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: jared-neal
-spec: 
-  replicas: 1
-  selector:
-    matchLabels:
-      app: jared-neal
-  template:
-    metadata:
-      labels:
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: jared-neal
+  spec: 
+    replicas: 1
+    selector:
+      matchLabels:
         app: jared-neal
-    spec: 
-      containers:
-      - name: jared-neal
-        image: gcr.io/team-not-found/teamwebsite
-        ports: 
-        - containerPort: 3000
-        resources:
-          limits:
-            cpu: 100m
-            memory: 250M
-          requests:
-            cpu: 50m
-            memory: 100M
+    template:
+      metadata:
+        labels:
+          app: jared-neal
+      spec: 
+        containers:
+        - name: jared-neal
+          image: gcr.io/team-not-found/teamwebsite
+          ports: 
+          - containerPort: 3000
+          resources:
+            limits:
+              cpu: 100m
+              memory: 250M
+            requests:
+              cpu: 50m
+              memory: 100M
 ---
 apiVersion: v1
 kind: Service
