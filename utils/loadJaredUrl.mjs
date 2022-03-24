@@ -7,7 +7,7 @@ const loadJaredUrl = async () => {
     };
 
     // const apiResponse = await fetch('http://34.133.60.104', options);
-    const apiResponse = await fetch('http://localhost:3000/jared', options);
+    const apiResponse = await fetch('http://localhost:3000/', options);
     const testResponse = await apiResponse.text();
 
     return testResponse;
