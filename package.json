@@ -11,6 +11,7 @@
     "test-dev": "cross-env NODE_ENV=development mocha",
     "start": "node server.js"
   },
+  "type": "module",
   "name": "teamwebsite",
   "description": "",
   "version": "1.0.0",
