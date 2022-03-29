@@ -8,7 +8,7 @@ const  loadurl = async () =>{
     };
 
     // const apiResponse = await fetch('http://34.71.251.65', options)
-    const apiResponse = await fetch('http://localhost:3000/omonze', options)
+    const apiResponse = await fetch('http://34.71.251.65', options)
     const testResponse = await apiResponse.text();
     // console.log("LoginToken: "+loginResponse);
     return testResponse;
