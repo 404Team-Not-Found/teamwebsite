@@ -38,4 +38,4 @@ steps:
   - 'gcr.io/$PROJECT_ID/teamwebsite:latest'
   - 'npm'
   - 'run'
-  - 'test-dev'
+  - 'test'
