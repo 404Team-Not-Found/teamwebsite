@@ -6,7 +6,7 @@ const loadandreaurl = async () =>{
         headers: {'Content-Type':'application/json'}
     };
 
-    const apiResponse = await fetch('http://localhost:3000/andrea', options);
+    const apiResponse = await fetch('http://34.123.26.95/andrea', options);
     const testResponse = await apiResponse.text();
     // console.log("LoginToken: "+loginResponse);
     return testResponse;

@@ -4,5 +4,5 @@ import assert from 'assert';
 
 it("Tests Andrea URL Endpoint", async ()=>{
     const urlResponse= await loadandreaurl();
-    assert.equal(urlResponse, "Hello Andrea");
+    assert.equal(urlResponse, "Hello Browser");
 });
