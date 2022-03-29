@@ -5,6 +5,6 @@ it("Test's Jared's URL Endpoint", async ()=>{
 
     const urlResponse = await loadJaredUrl();
     console.log("URL Response: ") + urlResponse;
-    assert.equal(urlResponse, "Hello Jared");
+    assert.equal(urlResponse, "Hello Browser");
 
 });
