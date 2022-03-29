@@ -5,6 +5,6 @@ it("Test url endpoint",async()=>{
 
 const urlResponse= await loadEduardourl();
 console.log("URL Response: ") + urlResponse;
-assert.equal(urlResponse, "Hello Eduardo");
+assert.equal(urlResponse, "Hello Browser");
 
 })
